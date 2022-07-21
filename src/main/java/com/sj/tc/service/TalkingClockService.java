@@ -36,11 +36,8 @@ public class TalkingClockService {
   }
 
   private TalkingClockResponse getTalkingClockResponseOfGivenTime(String time) {
-
     TalkingClock talkingClock = this.createTakingClock(time);
     return new TalkingClockResponse(time, talkingClock.getHumanReadableTime());
-
-
   }
 
   private String[] validate(String time) {
